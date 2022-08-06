@@ -1,4 +1,4 @@
-# Covea-Digital-Test
+# LV digital test
 Cucumber, Gherkin, Selenium WebDriver, Maven, PageObject and Java
 
 # Pre Condition

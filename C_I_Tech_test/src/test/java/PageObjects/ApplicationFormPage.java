@@ -15,27 +15,50 @@ public class ApplicationFormPage {
 	
 	//SELECT____TYPE___CHECK
 	@FindBy(css = "")
-	WebElement QUOTE_PAGE;
-	public void CHECK_USER_IS_ON_THE_QUOTEPAGE() {
-		QUOTE_PAGE.isDisplayed();
+	WebElement HOME_PAGE;
+	public void CHECK_USER_IS_ON_THE_HOMEPAGE() {
+		HOME_PAGE.isDisplayed();
 	}
 	
 	@FindBy(css = "")
-	WebElement dropdown_button;
-	public void Select_Dropdown() {
-		dropdown_button.click();
+	WebElement More_on_cover_options_button;
+	public void Select_More_on_cover_options() {
+		More_on_cover_options.click();
 	}
 
 	@FindBy(css = "")
-	WebElement mr_button;
-	public void Select_Mr_Title() {
-		mr_button.click();
+	WebElement  type_of_life_insurance_button;
+	public void Select_type_of_life_insurance() {
+		type_of_life_insurance_button.click();
 	}
 	
 	@FindBy(css = "")
+	WebElement life_insurance_quote_is_selected;
+	public void Type_life_insurance_quote_is_selected (String firstname) {
+		life_insurance_quote_is_selected.click();
+	}
+
+	@FindBy(css = "")
+	WebElement Cover_amount;
+	public void Type_Cover_amount() {
+		Cover_amount.sendKeys(Coveramount);
+	}
+
+	@FindBy(css = "")
+	WebElement Cover_length;
+	public void Type_Cover_length() {
+		Cover_length.sendKeys(Coverlength);
+	}
+
+	@FindBy(css = "")
+	WebElement btn_selected;
+	public void Type_btn_selected() {
+		Cover_amount.click();
+	}
+	@FindBy(css = "")
 	WebElement First_name;
-	public void Type_First_Name (String firstname) {
-		First_name.sendKeys(firstname);
+	public void Type_First_name (String Firstname) {
+		First_name.sendKeys(Firstname);
 	}
 	
 	@FindBy(css = "")
@@ -51,56 +74,16 @@ public class ApplicationFormPage {
 	}
 	
 	@FindBy(css = "")
-	WebElement confirm_email;
-	public void Type_Confirm_Email_Address(String confirmemail) {
-		email_address.sendKeys(confirmemail);
+	WebElement gender;
+	public void gender() {
+		gender.click();
 	}
 	
 	@FindBy(css = "")
-	WebElement telephone;
-	public void Type_Password(String tel) {
-		telephone.sendKeys(tel);
+	WebElement second_person;
+	public void second_person() {
+		secondperson.click();
 	}
 	
-	@FindBy(css = "")
-	WebElement valid_postcode;
-	public void Type_Postcode(String postcode) {
-		valid_postcode.sendKeys(postcode);
-	}
 	
-	@FindBy(css = "")
-	WebElement continue_button;
-	public void Select_Login() {
-		continue_button.click();
-	}
-	
-	@FindBy(css = "")
-	WebElement error_message;
-	public void Check_Error_Message() {
-		error_message.getText();
-	}
-
-	@FindBy(css = "")
-	WebElement no_error_message;
-	public void Check_Welcome_Message() {
-		no_error_message.isDisplayed();
-	}
-	
-	@FindBy(css = "")
-	WebElement list_of_address;
-	public void Check_List_Of_Address() {
-		list_of_address.isDisplayed();
-	}
-	
-	@FindBy(css = "")
-	WebElement full_address;
-	public void Select_List_Of_Address() {
-		full_address.click();
-	}
-	
-	@FindBy(css = "")
-	WebElement summarymessage;
-	public void Check_Summary_Message() {
-		summarymessage.isDisplayed();
-	}
 }

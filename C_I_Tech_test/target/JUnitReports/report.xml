@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.207">
-    <testcase classname="Application form Test" name="Fill the form with the details" time="3.828">
-        <system-out><![CDATA[Given I am navigating to the LV homepage..................................................passed
-And I click on More on life insurance button............................passed
-Then I click on the Types of life insurance.............................passed
-When I click on the Get life insurance quote button.....................passed                         
-And I fill the form with details........................................passed
-]]>
+    <testcase classname="Application form Test" name="User fills the test data in the form" time="3.828">
+        <system-out><![CDATA[Given I am on the Homepage..................................passed
+And I click on My more on Life insurance.................................................passed
+And The user clicks on the types of life insurance.......................................passed
+When the users tried to assert and find it is visible on page............................passed
+And the users click on the Get life insurance............................................passed
+Then the user fill the form with the test data...........................................passed
+]]></system-out>
+    </testcase>
+    </testsuite>
